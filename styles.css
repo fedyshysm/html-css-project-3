@@ -6,13 +6,25 @@
 
 .header__menu-items-item {}
 
+.header__menu-items-title {}
+
 .main {}
 
 .main__title {}
 
 .main__form {}
 
+.main__form-button {}
+
+.main__button_orange {}
+
 .main__info {}
+
+.main__info-img {}
+
+.main__info-title {}
+
+.main__info-text {}
 
 .main__video {}
 
@@ -20,4 +32,20 @@
 
 .main__cards-card {}
 
+.main__cards-title {}
+
+.main__cards-content {}
+
+.main__cards-content-price {}
+
+.main__cards-content-info {}
+
+.main__cards-content-button {}
+
 .footer {}
+
+.footer__items {}
+
+.footer__items-items {}
+
+.footer__title {}
