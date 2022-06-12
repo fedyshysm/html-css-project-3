@@ -8,6 +8,7 @@
 
 .main {
     position: relative;
+    margin: 0 15%;
 }
 
 header {
@@ -78,12 +79,12 @@ header {
 
 .main__form_input {
     width: 30%;
-    border: 1px rgb(234, 172, 56) solid;
+    border: 1px rgb(238, 165, 31) solid;
     padding-left: 5px;
 }
 
 .main__button_orange {
-    background-color: rgb(235, 178, 73);
+    background-color: rgb(230, 163, 39);
     color: white;
 }
 
@@ -91,7 +92,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 80%;
     margin: 5% auto;
 }
 
@@ -123,19 +124,58 @@ header {
     height: 315px;
 }
 
-.main__cards {}
+.main__cards {
+    margin-top: 60px;
+    display: flex;
+}
 
-.main__cards-card {}
+.main__cards-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 2px rgb(174, 125, 33) solid;
+    border-radius: 8px;
+    margin: 0 40px;
+}
 
-.main__cards-title {}
+.main__cards-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgb(174, 125, 33);
+    color: white;
+    height: 30px;
+    width: 100%;
+}
 
-.main__cards-content {}
+.main__cards-content-info {
+    white-space: nowrap;
+}
 
-.main__cards-content-price {}
+.main__cards-content,
+.main__cards-content-price,
+.main__cards-content-info,
+.main__cards-content-button {
+    text-align: center;
+    margin: 5px;
+}
 
-.main__cards-content-info {}
+.main__cards-content {
+    margin: 0 20px;
+    padding: 10px;
+}
 
-.main__cards-content-button {}
+.main__cards-content-button {
+    width: 80%;
+    margin: 10px;
+}
+
+.main__cards-content-price {
+    font-size: x-large;
+    margin: 10px;
+}
 
 .footer {}
 
