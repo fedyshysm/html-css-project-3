@@ -87,9 +87,30 @@ header {
     color: white;
 }
 
-.main__info {}
+.main__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 5% auto;
+}
 
-.main__info-img {}
+.main__info_card {
+    display: inherit;
+    justify-content: center;
+    margin: 5px;
+}
+
+.main__info_card-text {
+    display: inherit;
+    flex-direction: column;
+}
+
+.main__info-img {
+    width: max-content;
+    height: max-content;
+    margin: 10px;
+}
 
 .main__info-title {}
 
