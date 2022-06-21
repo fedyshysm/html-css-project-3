@@ -23,22 +23,27 @@ header {
 .header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0 20px;
 }
 
 .header__icon {
     width: 55px;
     height: 55px;
+    margin: 5px;
 }
 
 .header__title {
     flex-grow: 1;
     font-size: 18px;
+    margin: 5px;
 }
 
 .header__menu-items {
     display: flex;
+    white-space: nowrap;
     justify-content: flex-end;
+    margin: 5px;
 }
 
 .header__menu-items-item {
@@ -52,11 +57,11 @@ header {
     flex-shrink: 1;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 12%;
 }
 
 .main__form-button {
-    width: 10%;
+    width: 100px;
 }
 
 .main__form_title,
@@ -66,7 +71,7 @@ header {
 }
 
 .main__form_title {
-    margin-top: 20px;
+    text-align: center;
 }
 
 .main__button_orange,
@@ -193,4 +198,24 @@ header {
 .footer__items-item {
     flex-grow: 1;
     cursor: pointer;
+}
+
+@media (max-width: 530px) {
+    .header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    .main__form {
+        margin-top: 30%;
+    }
+
+    .main__video-frame {
+        width: calc(560px / 1.7);
+        height: calc(315px / 1.7);
+    }
 }
