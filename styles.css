@@ -50,6 +50,7 @@ header {
     font-size: 13px;
     flex-grow: 1;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .main__form {
@@ -186,23 +187,26 @@ header {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: small;
     background-color: rgb(233, 237, 240);
     margin-top: 40px;
     padding: 20px;
+    min-height: 30px;
 }
 
 .footer__items {
     display: flex;
-    justify-content: flex-end;
-    font-size: small;
+    white-space: nowrap;
 }
 
-.footer__title {
-    margin-left: 300px;
-}
+.footer__title {}
 
 .footer__items-item {
-    flex-grow: 1;
+    margin-right: 15px;
     cursor: pointer;
 }
 
