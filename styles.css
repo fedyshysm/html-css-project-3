@@ -53,6 +53,11 @@ header {
     cursor: pointer;
 }
 
+.header__menu-items-item:hover,
+.footer__items-item:hover {
+    color: rgb(174, 125, 33);
+}
+
 .main__form {
     display: flex;
     flex-shrink: 1;
@@ -91,6 +96,14 @@ header {
 .main__button_orange {
     background-color: rgb(230, 163, 39);
     color: white;
+    border: 2px solid white;
+}
+
+.main__button_orange:hover {
+    background-color: white;
+    color: rgb(230, 163, 39);
+    border: 2px solid rgb(230, 163, 39);
+    cursor: pointer;
 }
 
 .main__info {
