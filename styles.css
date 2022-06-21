@@ -7,8 +7,8 @@
 }
 
 .main {
-    position: relative;
-    margin: 0 15%;
+    margin: 0 auto;
+    width: 80%;
 }
 
 header {
@@ -44,11 +44,12 @@ header {
 .header__menu-items-item {
     font-size: 13px;
     flex-grow: 1;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .main__form {
     display: flex;
+    flex-shrink: 1;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
@@ -61,9 +62,7 @@ header {
 .main__form_title,
 .main__form-button,
 .main__form_input {
-    display: inherit;
-    justify-content: center;
-    margin: 7px;
+    margin: 7px auto;
 }
 
 .main__form_title {
@@ -97,15 +96,10 @@ header {
 }
 
 .main__info_card {
-    display: inherit;
-    justify-content: center;
-    margin: 5px;
+    margin: 5px auto;
 }
 
-.main__info_card-text {
-    display: inherit;
-    flex-direction: column;
-}
+.main__info_card-text {}
 
 .main__info-img {
     width: max-content;
@@ -127,16 +121,19 @@ header {
 .main__cards {
     margin-top: 60px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 .main__cards-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 200px;
     border: 2px rgb(174, 125, 33) solid;
     border-radius: 8px;
-    margin: 0 40px;
+    margin: 5px 40px;
 }
 
 .main__cards-title {
@@ -177,10 +174,23 @@ header {
     margin: 10px;
 }
 
-.footer {}
+.footer {
+    background-color: rgb(233, 237, 240);
+    margin-top: 40px;
+    padding: 20px;
+}
 
-.footer__items {}
+.footer__items {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+}
 
-.footer__items-items {}
+.footer__title {
+    margin-left: 300px;
+}
 
-.footer__title {}
+.footer__items-item {
+    flex-grow: 1;
+    cursor: pointer;
+}
